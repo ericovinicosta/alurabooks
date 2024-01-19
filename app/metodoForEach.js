@@ -1,7 +1,11 @@
+/*Executa uma ação com cada elemento do array*/
 /*Elemento para inserir os livros*/
 const sessaoLivros = document.querySelector('#livros');
+/*Elemento para inserir o valor de todos os livros disponíveis*/
+const valorTotalLivrosDisponiveis = document.getElementById('valor_total_livros_disponiveis');
 
 const exibirOsLivrosNaTela = (livros) => {
+    valorTotalLivrosDisponiveis.innerHTML = '';
     sessaoLivros.innerHTML = '';
     livros.forEach(livro => {
         let disponibilidade = livro.quantidade <= 0 ? 'indisponivel': '';

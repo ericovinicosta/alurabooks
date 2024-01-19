@@ -1,3 +1,4 @@
+/*Organiza o array*/
 const btnOrdenarPorPreco = document.querySelector('#btnOrdenarPorPreco');
 
 ordenarLivrosPorPreco = () => {
